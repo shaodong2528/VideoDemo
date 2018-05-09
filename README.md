@@ -15,5 +15,19 @@ android开发快速搭建框架
 
 
 ### 以下是我的截图
+<img width="400" height="600" src="https://github.com/shaodong2528/VideoDemo/blob/master/ScreenShots/%E8%B6%85%E7%BA%A7%E6%88%AA%E5%B1%8F_20180509_144702.png?raw=true"/>
+<img width="400" height="600" src="https://github.com/shaodong2528/VideoDemo/blob/master/ScreenShots/%E8%B6%85%E7%BA%A7%E6%88%AA%E5%B1%8F_20180509_144702.png?raw=true"/>
+<img width="400" height="600" src="https://github.com/shaodong2528/VideoDemo/blob/master/ScreenShots/%E8%B6%85%E7%BA%A7%E6%88%AA%E5%B1%8F_20180509_144730.png?raw=true"/>
+<img width="400" height="600" src="https://github.com/shaodong2528/VideoDemo/blob/master/ScreenShots/%E8%B6%85%E7%BA%A7%E6%88%AA%E5%B1%8F_20180509_144738.png?raw=true"/>
+
+## 二、使用RxJava+Retrofit+OkHttp请求网络
+
+这是目录很常见的一种网络请求方式，封装比较好，代码看起来比较简洁，具体使用可以自己去百度，我这个项目中已经加入了该功能。
+第一次写这文件，纯手写不容易，可以的话希望能给个star,你的支持是我最大的学习动力，谢谢。
+
+如果在使用过程中遇到BUG，欢迎能Issues。
+
+
+
 
 
