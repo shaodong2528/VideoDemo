@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "company.video.com.videodemo"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // 新版打包需要，（在引入Mperssion时发现需要该配置）
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    //LoggingInterceptor  okhttp日志拦截
+    maven { url 'https://jitpack.io' }
+    google()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    // Android事件注入 https://github.com/JakeWharton/butterknife
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    /*rx-android-java*/
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+//    compile 'com.trello:rxlifecycle:1.0'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    /*rotrofit*/
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    // Retrofit FastJson https://github.com/ligboy/retrofit-converter-fastjson
+    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    // EventBus https://github.com/greenrobot/EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    // OKHTTP 日志拦截
+    compile('com.github.ihsanbal:LoggingInterceptor:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    // Log日志  https://github.com/pengwei1024/LogUtils
+    compile 'com.apkfuns.logutils:library:1.5.1.1'
+    // 权限管理 https://github.com/hongyangAndroid/MPermissions
+    compile 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+
+    //文件下载，支持断点续传https://github.com/lingochamp/FileDownloader/blob/master/README-zh.md
+    compile 'com.liulishuo.filedownloader:library:1.7.2'
+}

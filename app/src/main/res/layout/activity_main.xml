@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <!--标题-->
+    <RelativeLayout style="@style/TitleBarBgColorStylet">
+        <TextView
+            android:id="@+id/tv_back"
+            style="@style/TitleBarBackStyle" />
+        <TextView
+            style="@style/TitleBarTitleTextStyle"
+            android:text="@string/app_title" />
+    </RelativeLayout>
+
+    <!--中间内容-->
+    <FrameLayout
+        android:id="@+id/apkol_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+    <!--底部导航-->
+    <RelativeLayout
+        android:id="@+id/apkol_main_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_boddom_height">
+
+        <RadioGroup
+            android:id="@+id/rg_home_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/rbtn_home_main"
+                style="@style/apkol_tab_buttom_btn"
+                android:checked="true"
+                android:drawableTop="@drawable/apkol_boddom_game_selector"
+                android:text="@string/app_home_main"/>
+            <RadioButton
+                android:id="@+id/rbtn_home_video"
+                style="@style/apkol_tab_buttom_btn"
+                android:drawableTop="@drawable/apkol_boddom_video_selector"
+                android:text="@string/app_home_video" />
+            <RadioButton
+                android:id="@+id/rbtn_home_discover"
+                style="@style/apkol_tab_buttom_btn"
+                android:drawableTop="@drawable/apkol_boddom_discover_selector"
+                android:text="@string/app_home_discover" />
+            <RadioButton
+                android:id="@+id/rbtn_home_my"
+                style="@style/apkol_tab_buttom_btn"
+                android:drawableTop="@drawable/apkol_boddom_local_selector"
+                android:text="@string/app_home_me" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

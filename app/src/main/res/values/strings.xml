@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VideoDemo</string>
+
+    <string name="app_home_main">首页</string>
+    <string name="app_home_video">视频</string>
+    <string name="app_home_discover">发现</string>
+    <string name="app_home_me">我的</string>
+
+    <string name="app_back">返回</string>
+    <string name="app_title">标题</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_selected="true" android:color="@color/apkol_main_boddom_txt_color_sel"/>
+    
+    <item android:state_selected="false" android:color="@color/apkol_main_boddom_txt_color_nor"/>
+    
+    <item android:color="@color/apkol_main_boddom_txt_color_nor"/>
+    
+</selector>

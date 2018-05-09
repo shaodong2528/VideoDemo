@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 底部导行文字颜色 -->
+    <color name="apkol_main_boddom_txt_color_sel">#5069BB</color>
+    <color name="apkol_main_boddom_txt_color_nor">#3086B3</color>
+
+    <color name="apkol_title_color">#FF4246</color>
+    <color name="apkol_title_edit_color_trancert">#00000000</color>
+    <color name="apkol_title_edit_color_other">#942933</color>
+    <color name="apkol_title_bg_color">#ff2d41</color>
+    <color name="apkol_title_text_red_color">#ffffff</color>
+    <color name="apkol_title_text_white_color">#666666</color>
+    <color name="apkol_text_color">#666666</color>
+    <color name="apkol_text_white">#ffffff</color>
+    <color name="apkol_text_gray">#4c4c4c</color>
+    <color name="apkol_text_gray_dark">#808080</color>
+    <color name="apkol_text_gray_more">#828282</color>
+    <color name="apkol_text_gray_light">#999999</color>
+    <color name="apkol_text_gray_more_light">#b2b2b2</color>
+    <color name="apkol_layout_bg_color">#e6e6e6</color>
+    <color name="apkol_layout_pay_bg">#eeeeee</color>
+    <color name="apkol_line">#cccccc</color>
+    <color name="apkol_flow_bg">#f2f2f2</color>
+    <color name="apkol_goods_all_times">#4c4c4c</color>
+    <color name="apkol_prize_progress_progress">#ff2d3f</color>
+    <color name="apkol_prize_progress_background">#d4dbde</color>
+    <color name="apkol_boddom_tag_color">#112033</color>
+</resources>
