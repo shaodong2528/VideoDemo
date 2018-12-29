@@ -1,0 +1,3 @@
+<string name="wallet_balance_withdraw_dialot_title">余额提现</string>
+<string name="wallet_go_withdraw">去提现</string>
+<string name="wallet_withdraw_dialog_title">商户钱包提现</string>
